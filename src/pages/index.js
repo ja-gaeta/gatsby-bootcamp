@@ -1,13 +1,18 @@
 import React from "react"
+import { Link } from "gatsby"
+
+import Layout from "../components/layout"
 
 const IndexPage = () => {
   return (
-    <div>
-      <h1>Hello.</h1>
-      <h2>
-        I'm Andrew, a full-stack developer living in beautiful Philadelphia.
-      </h2>
-    </div>
+    <Layout>
+      <h1>Olá.</h1>
+      <h2>Meu nome é Gaeta, estudando Gatsby na bela Taubaté.</h2>
+      <p>
+        Precisa de um desenvolvedor?{" "}
+        <Link to="/contact">Entre em contato.</Link>
+      </p>
+    </Layout>
   )
 }
 
