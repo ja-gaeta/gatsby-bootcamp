@@ -1,10 +1,12 @@
 import React from "react"
 
-const Footer = () => {
+const Footer = ({ author }) => {
   const year = new Date().getFullYear()
   return (
     <footer>
-      <p>Criado por José A. Gaeta Mendes, &copy; {year}</p>
+      <p>
+        Criado por {author}, &copy; {year}
+      </p>
     </footer>
   )
 }

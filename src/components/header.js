@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import headerStyles from "./header.module.scss"
 
-const Header = () => {
+const Header = ({ title }) => {
   return (
     <header className={headerStyles.header}>
       <h1>
@@ -12,7 +12,7 @@ const Header = () => {
           activeClassName={headerStyles.activeNavItem}
           to="/"
         >
-          Ponto G++
+          {title}
         </Link>
       </h1>
       <nav>
